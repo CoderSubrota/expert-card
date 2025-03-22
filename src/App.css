@@ -1,0 +1,29 @@
+#rightSideCard {
+  max-width: 300px;
+  position: fixed;
+  top: 84px;
+  right: 20px;
+  height: auto;
+  z-index: 1000;
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  #rightSideCard {
+    max-width: 90%;
+    right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  #rightSideCard {
+    position: inherit;
+    top: 0;
+    right: 0;
+    margin-left: 0;
+    width: 100%;
+    max-width: none;
+  }
+}
