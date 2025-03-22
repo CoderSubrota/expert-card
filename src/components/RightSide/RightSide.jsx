@@ -1,6 +1,6 @@
 const RightSide = ({ expertsData, totalSalary, expertCount }) => {
   return (
-    <div className="card shadow border-light w-100" style={{ maxWidth: '300px', position: 'fixed', top: '84px', right: '20px', height: 'auto', zIndex: 1000 , marginLeft:"300px"}}>
+    <div className="card shadow border-light w-100" id="rightSideCard" >
       <div className="card-body">
         <h2 className="card-title text-center">Expert Count: {expertCount}</h2>
         <h3 className="text-center text-success">

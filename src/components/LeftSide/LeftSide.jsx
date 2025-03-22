@@ -17,7 +17,7 @@ const LeftSide = () => {
   }, []);
 
   const addToCart = (expert) => {
-    setExpertsData((prevExpertsData) => {
+      setExpertsData((prevExpertsData) => {
       const updatedExpertsData = [...prevExpertsData, expert];
       const newTotalSalary = updatedExpertsData.reduce((acc, curr) => acc + curr.salary, 0);
       setTotalSalary(newTotalSalary);
@@ -28,7 +28,7 @@ const LeftSide = () => {
 
   return (
     <>
-      <h2 className="text-center fw-bold my-3 fs-2 text-primary"> Our Experts </h2>
+   <h2 className="header-title">Our Experts</h2>
       <div className="d-flex f flex-sm-column flex-lg-row">
         <div className="container ms-2">
           <div className="row">
